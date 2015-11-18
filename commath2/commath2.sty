@@ -56,29 +56,11 @@
 \newcommand{\tod}[3][]{\tfrac{\dif\spx{#1}#2}{\dif#3\spx{#1}}} % text style
 \newcommand{\dod}[3][]{\dfrac{\dif\spx{#1}#2}{\dif#3\spx{#1}}} % display style
 
-% Material derivative
-\newcommand{\mD}[3][]{\frac{\Dif\spx{#1}#2}{\Dif#3\spx{#1}}}
-\newcommand{\tmD}[3][]{\tfrac{\Dif\spx{#1}#2}{\Dif#3\spx{#1}}}
-\newcommand{\dmD}[3][]{\dfrac{\Dif\spx{#1}#2}{\Dif#3\spx{#1}}}
-
-% Not used remnants from commath, left here for completeness
-% \providecommand{\thmref}[1]{Theorem~\ref{#1}}
-% \providecommand{\exref}[1]{Example~\ref{#1}}
-% \providecommand{\defnref}[1]{Definition~\ref{#1}}
-% \providecommand{\secref}[1]{\S\ref{#1}}
-% \providecommand{\lemref}[1]{Lemma~\ref{#1}}
-% \providecommand{\propref}[1]{Proposition~\ref{#1}}
-% \providecommand{\remref}[1]{Remark~\ref{#1}}
-% \providecommand{\figref}[1]{Figure~\ref{#1}}
-% \providecommand{\colref}[1]{Corollary~\ref{#1}}
-% \providecommand{\appref}[1]{Appendix~\ref{#1}}
-% \providecommand{\assref}[1]{Assumption~\ref{#1}}
-
 % Make nested braces grow.
 \delimitershortfall-1sp
 
-% the value for the optional argument ranges from -1 to 4 with higher values resulting in larger delimiters
-% default value for #1 is -1 which results in automatic size
+% The value for the optional argument ranges from -1 to 4 with higher values resulting in larger delimiters
+% Default value for #1 is -1 which results in automatic size
 \newcommand{\genericdel}[4]{%
   \ifcase#3\relax
   \ifx#1.\else#1\fi#4\ifx#2.\else#2\fi\or
